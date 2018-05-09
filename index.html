@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo page</title>
+    </head>
+    <body>
+        <div id="output"> </div>
+
+        <script src="./jquery.min.js"></script>
+        <script type="text/javascript" src="./jquery.qrcode.min.js"></script><!--这里不再调用官方的压缩文件，换成从本帖内下载的jquery.qrcode.min.js文件-->
+
+        <script>
+            jQuery(function() {
+                jQuery('#output').qrcode({
+                    text: "电视端",
+                    //height: 250,
+                    //width: 250,
+                    logo: 'logo.png'//这里配置Logo的地址即可。
+                });
+            })
+
+        </script>
+
+    </body>
+</html>
